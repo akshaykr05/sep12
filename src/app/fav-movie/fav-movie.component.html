@@ -1,0 +1,21 @@
+  <!-- list of favourite movies -->
+  <div class="container">
+    <div class="row">
+      <div class="card col-lg-4 col-md-6" *ngFor="let movie of favmovies | paginate: { itemsPerPage: 10, currentPage: p} ">
+        <div class="card-body">
+          <h4 class="card-title"><span>{{movie.title}}</span></h4>
+          <img src="https://image.tmdb.org/t/p/w300/{{movie.poster_path}}" class="img-thumbnail img-fluid img-responsive">
+        </div>
+        <div class="card-footer">
+          <h5>Release Date:- {{movie.release_date}}</h5>
+          <button (click)=deleteMovie(movie.id)>Delete</button><br><br>
+          <input type="text" [(ngModel)]="comment" placeholder="Review">
+          <button (click)=updateMovie(movie,comment)> Update</button>
+        </div>
+      </div>
+    </div>
+  </div><br><br>
+  <!-- pagination -->
+  <div class="paginateicon">
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+  </div>

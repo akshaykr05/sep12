@@ -1,0 +1,66 @@
+<div class="movie">
+  <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+    <a class="navbar-brand" href="#">MoviesWorld</a>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li><a class="nav-link" href="#">Hollywood</a></li>
+        <li><a class="nav-link" href="#">Bollywood</a></li>
+        <li><a class="nav-link" href="#">TV Series</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a class="nav-link active" href="#">Home</a></li>
+        <li><a class="nav-link" routerLink='/app-movie'><span class="glyphicon glyphicon-search"></span> Search</a></li>
+        <li><a class="nav-link" routerLink='/fav-movie'><span class="glyphicon glyphicon-heart"></span> Favourite</a></li>
+        <li><a class="nav-link" routerLink="/app-signup" href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a class="nav-link" routerLink="/app-login" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- /.navigation bar -->
+  <router-outlet></router-outlet>
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-6 footer-col">
+          <h3> Movies by Language </h3>
+          <ul>
+            <li> <a href="#"> Bollywood </a> </li>
+            <li> <a href="#"> Hollywood </a> </li>
+            <li> <a href="#"> Tv Series </a> </li>
+            <li> <a href="#"> Punjabi Movies </a> </li>
+            <li> <a href="#"> Tollywood </a> </li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-6 footer-col">
+          <h3>Movies By Genre</h3>
+          <ul class="by-genre-column">
+            <li><a href="#"> Best Action Movies</a></li>
+            <li><a href="#"> Best  Romantic Movies</a></li>
+            <li><a href="#"> Best Comedy Movies</a></li>
+            <li><a href="#"> Best Drama Movies</a></li>
+            <li><a href="#"> Best Adventure Movies</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-6 footer-col">
+          <h3>Movie Reviews</h3>
+          <ul class="groups">
+            <li><a href="#">Latest News on Movies, Events</a></li>
+            <li><a href="#">Rajeev Masand Movie Reviews</a></li>
+            <li><a href="#">Anupama Chopra Movie Review</a></li>
+            <li><a href="#">Film Reviews</a></li>
+            <li><a href="#">Guest Blogging</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>Copyright &copy; Entertainment.com
+          <a href="https:\\facebook.com"><img src="./assets/fb.png"></a>
+          <a href="https:\\twitter.com"><img src="./assets/twitter.png"></a>
+          <a href="https:\\instagram.com"><img src="./assets/insta.png"></a>
+      </div>
+    </div>
+  </footer>
+</div>
